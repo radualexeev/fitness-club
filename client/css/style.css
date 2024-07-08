@@ -14,6 +14,7 @@ html, body {
     color: #ffffff;
     background: black;
     height: 100%;
+    /* overflow-y: hidden; */
 }
 
 .container {
@@ -157,20 +158,23 @@ a {
 .about-us-block {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: end;
+
+    position: relative;
 }
 
 .about-us-title{
     border-top: 2px solid #AEAEAE;
-    border-left: 2px solid #AEAEAE;
     border-bottom: 2px solid #AEAEAE;
+    border-left: 2px solid #AEAEAE;
     color: #E8E8E8;
-    text-align: right;
     font-family: Montserrat;
     text-transform: uppercase;
-    text-align: left;
-    font-size: 48px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 72px;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
@@ -181,13 +185,16 @@ a {
     box-shadow: 0px 0px 32px 0px rgba(0, 29, 181, 0.75);
     backdrop-filter: blur(25px);
     margin: 0 0 15px 0;
-    
 }
 
 .about-us-text{
-    padding: 0 200px;
+    position: absolute;
+    bottom: -15px;
+    right: 190px;
+
+    padding: 0 10px;
     color: #E8E8E8;
-    text-align: right;
+    text-align: left;
     font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
@@ -196,7 +203,6 @@ a {
 }
 
 .container-info-blocks {
-    /* position: relative; */
     padding: 0px 90px 0 0;
     display: flex;
     flex-direction: row;
@@ -205,25 +211,33 @@ a {
 
     width: 100%;
     height: 100%;
+    position: relative;
+    z-index: 0;
+}
 
-    background-color: aqua;
+.ellipse-1 {
+    position: absolute;
+    left: 0;
+    top: -150px;
+    z-index: 1;
 }
 
 .trener{
-    top: 35px;
-    /* position: absolute; */
+    position: absolute;
+    left: 320px;
+    bottom: 0;
     width: 600px;
     height: auto;
-
-    background-color: #001DB5;
+    z-index: 2;
 }
 
-.info-blocks {
-    /* margin-top: 80px; */
+.info-blocks {    
+    position: absolute;
+    right: 200px;
+    bottom: 0;
     width: 785px;
-    height: 100%;
-    
-    background-color: #430000;
+    height: 750px;
+    z-index: 2;
 }
 
 .section-info-blocks {
@@ -233,6 +247,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 .block-info{
@@ -242,6 +257,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    gap: 10px;
     align-items: center;
 }
 
@@ -264,6 +280,7 @@ a {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    gap: 5px;
 }
 
 .blocks-info-text{
