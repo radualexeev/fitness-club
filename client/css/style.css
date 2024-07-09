@@ -442,9 +442,18 @@ a {
 
 .galery {
     margin-bottom: 200px;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
     background-color: black;
+}
+
+.block-4 {
+    width: 1920px;
+    height: 614px;
+
+    border: solid 2px aquamarine;
 }
 
 .galery-block {
@@ -466,7 +475,7 @@ a {
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
-    padding: 9px 200px;
+    padding: 10px 353px 10px 0px; 
     width: 1200px;
     height: 76px;
     background: linear-gradient(269deg, rgba(82, 67, 251, 0.52) -36.92%, rgba(18, 2, 45, 0.00) 119.81%);
@@ -477,10 +486,10 @@ a {
 
 .galery-text{
     margin-bottom: 70px;
+    display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    flex-direction: column;
-    display: flex;
+    flex-direction: column; 
 }
 
 .info-title-galery{
@@ -490,7 +499,7 @@ a {
     line-height: 120%;
     margin-bottom: 0px;
     text-align: end;
-    padding-right: 200px;
+    padding: 10px 353px 10px 0px;
 }
 
 .info-text-galery{
@@ -500,7 +509,7 @@ a {
     font-weight: 400;
     line-height: 120%;
     text-align: right;
-    padding-right: 200px;
+    padding: 10px 353px 10px 0px;
     width: 1030px;
 }
 
@@ -692,10 +701,10 @@ a {
     background: radial-gradient(20818.76% 404.51% at 55.09% -140%, rgba(251, 0, 0, 0.35) 0%, rgba(104, 0, 0, 0.00) 100%);
     box-shadow: 0px 0px 30px 0px #430000;
     transform: scale(1.01);
-  }
+}
 
 
-  .wrapper{
+.wrapper{
 	display: flex;
 	justify-content:center;
 	align-items: center;
@@ -704,7 +713,6 @@ a {
 @media (max-width:767px){
 	.wrapper{padding: 50px 10px;}
 }
-
 /* Основные стили */
 
 /* Слайдер */
@@ -714,7 +722,7 @@ a {
 /* Ограничивающая оболочка */
 .slick-list {
 	overflow: hidden;
- }
+}
 /* Лента слайдов */
 .slick-track{
 	display: flex;
@@ -748,6 +756,7 @@ a {
 .slider {
 	position: relative;
 	padding: 0px 60px;
+    width: 1214px;
 }
 
 @media (max-width:767px){
