@@ -15,6 +15,7 @@ html, body {
     background: black;
     height: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -131,7 +132,7 @@ a {
 }
 
 .about-us{
-    margin: 50px 0 200px 0;
+    margin: 0 0 200px 0;
     top: 70px;
     position: relative;
     display: flex;
@@ -189,8 +190,7 @@ a {
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
-    
+    line-height: normal;    
 }
 
 .container-info-blocks {
@@ -293,7 +293,7 @@ a {
 }
 
 .price {
-    margin-bottom: 100px;
+    margin: 95px 0 100px 0;
     
     background-color: rgb(0, 0, 0);
     display: flex;
@@ -308,7 +308,7 @@ a {
 }
 
 .price-title {
-    margin-bottom: 15px;
+    margin: 87px 0 0 0;
     border-top: 2px solid #aeaeae;
     border-right: 2px solid #aeaeae;
     border-bottom: 2px solid #aeaeae;
@@ -462,7 +462,7 @@ a {
     background: linear-gradient(269deg, rgba(82, 67, 251, 0.52) -36.92%, rgba(18, 2, 45, 0.00) 119.81%);
     box-shadow: 0px 0px 32px 0px rgba(0, 29, 181, 0.75);
     backdrop-filter: blur(25px);
-    margin: 20px 0;
+    margin: 200px 0 0 0;
 }
 
 .galery-text{
@@ -495,7 +495,7 @@ a {
 }
 
 .shop{
-    margin-bottom: 200px;
+    margin-bottom: 300px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -537,7 +537,7 @@ a {
 }
 
 .store-title{
-    margin: 0 0 20px 0;
+    margin: 200px 0 20px 0;
     justify-content: flex-start;
     text-align: left;
     background: linear-gradient(269deg, rgba(82, 67, 251, 0.52) -36.92%, rgba(18, 2, 45, 0.00) 119.81%);
