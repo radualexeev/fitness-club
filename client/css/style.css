@@ -6,8 +6,9 @@
 }
 
 html, body {
+    --Montserrat: 'Montserrat', sans-serif;
     box-sizing: border-box;
-	font-family: 'Montserrat', sans-serif;
+	font-family: var(--Montserrat);
     font-size: 18px;
     line-height: 27px;
     font-weight: 300;
@@ -17,6 +18,139 @@ html, body {
     overflow-x: hidden;
     scroll-behavior: smooth;
     user-select: none;
+    position: relative;
+    z-index: -3;
+}
+
+#window-hidden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    opacity: 1;
+    z-index: -3; 
+    /* z-index 3 - чтобы был виден */
+}
+
+#window-block {
+    width: 500px;
+    height: 600px;
+    padding: 40px 22px 60px 22px;
+    background: linear-gradient(264.57deg, rgba(47, 33, 207, 0.063) 91.6%, rgba(18, 2, 45, 0) 111.28%);
+    border: solid 2px rgb(159, 17, 199);
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 0px #163AF780;
+}
+
+#user-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#request-text {
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.38px;
+    text-align: center; 
+}
+
+input, textarea {
+    outline: none;
+    font-family: var(--Montserrat);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    padding: 15px;
+    border: solid 1px grey;
+    border-radius: 5px; 
+    resize: none;
+}
+
+#user-name {
+    width: 398px;
+    height: 70px;
+    border: solid 1px grey;
+    border-radius: 5px;    
+}
+
+#user-phone {
+    width: 398px;
+    height: 70px;
+}
+
+#user-message {
+    width: 398px;
+    height: 149px;
+}
+::placeholder {
+    width: 100%;
+    height: 20px;   
+    font-family: var(--Montserrat);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    background: #FFFFFF;
+}
+
+#btn-submit {
+    margin: 0 0 0 26px;
+    width: 200px;
+    height: 60px;
+    border: solid 1px grey;
+    border-radius: 5px;  
+    align-self: flex-start;
+    background: #C10000;
+    font-family: var(--Montserrat);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    transition: .2s transform ease-in-out;
+    will-change: transform;
+    overflow: hidden;
+}
+
+#btn-submit::after {
+    content: "";
+    background-color: #e30606;
+    display: block;
+    position: absolute;
+    width: 230px;
+    height: 200px;
+    left: -15px;
+    top: -45px;
+    border-radius: 90px;
+    transform: translate(-100%, 0) rotate(20deg);
+    transform-origin: top left;
+    transition: .4s transform ease-in-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+#btn-submit:hover::after {
+    transform: translate(0, 0);
+} 
+
+#btn-submit:hover {
+    /* transform: scale(1.05); - увеличивает размер кнопки */
+    will-change: transform;
 }
 
 .container {
@@ -294,7 +428,7 @@ a {
 }
 
 .price {
-    margin: 95px 0 100px 0;
+    margin: 95px 0 0 0;
     
     background-color: rgb(0, 0, 0);
     display: flex;
@@ -523,7 +657,7 @@ a {
     position: absolute;
     top: -150px;
     left: 0;
-    z-index: 1;
+    z-index: -1;
 }
 
 .ellipse-4 {
@@ -554,7 +688,7 @@ a {
     border-top: 2px solid #aeaeae;
     border-right: 2px solid #aeaeae;
     border-bottom: 2px solid #aeaeae;
-    display: flex;
+    display: flex; 
     color: #E8E8E8;
 }
 
@@ -857,4 +991,4 @@ a {
 }
 .slider__item img{
 	max-width: 100%;
-}
+} 
