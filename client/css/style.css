@@ -203,6 +203,8 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
+    width: 100vw;
+    height: 100vh;
 }
 
 .top {
@@ -264,6 +266,13 @@ a {
     font-weight: 600;
     line-height: 25px;
     cursor: pointer;
+}
+
+/* увеличение кнопки */
+.top-btn:focus {
+    transition: 0.4s transform ease-in-out;
+    transform: scale(1.15);
+    will-change: transform;
 }
 
 .about-us{
