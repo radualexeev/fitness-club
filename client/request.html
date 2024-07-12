@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Expert Fitness - заявка</title>
+    </head>
+<body>
+    <div id="window-hidden">
+        <!-- <p id="response-text">Cообщение было отправлено! <br>C вами свяжется наш менеджер. <br>Cпасибо что выбрали нас! </p>
+        <img src="img/logo.svg" alt="logo"> -->
+        <div id="window-block">
+            <form action="index.html" id="user-form" target="_parent">
+                <h1 id="request-text">Бесплатная тренировка с тренером</h1>
+                <input type="text" name="user-name" id="user-name" placeholder="Введите имя" autocomplete="off" maxlength="37" required>
+                <input type="tel" name="user-phone" id="user-phone" placeholder="Введите номер телефона" autocomplete="off" required pattern="^[0-9-+\s()]*$" maxLength="16" minLength="6">
+                <textarea name="user-comment" id="user-message" placeholder="Введите ваше сообщение" autocomplete="off" maxlength="225"></textarea>
+                <button type="submit" id="btn-submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/request.js"></script>
+</body>
+</html>

@@ -18,21 +18,19 @@ html, body {
     overflow-x: hidden;
     scroll-behavior: smooth;
     user-select: none;
-    position: relative;
+    width: 100vw;
+    height: 100vh;
     z-index: -3;
 }
 
 #window-hidden {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
     width: 100vw;
     height: 100vh;
     background-color: #000000;
-    opacity: 1;
-    z-index: -3; 
-    /* z-index 3 - чтобы был виден */
 }
 
 #window-block {
@@ -40,9 +38,21 @@ html, body {
     height: 600px;
     padding: 40px 22px 60px 22px;
     background: linear-gradient(264.57deg, rgba(47, 33, 207, 0.063) 91.6%, rgba(18, 2, 45, 0) 111.28%);
-    border: solid 2px rgb(159, 17, 199);
+    border: solid 1px rgb(159, 17, 199);
     border-radius: 20px;
     box-shadow: 0px 0px 30px 0px #163AF780;
+}
+
+#response-text {
+    color: white;
+    font-size: larger;
+    text-align: center;
+    line-height: 50px;
+    text-shadow: 2px 2px 150px rgba(255, 255, 255, 0.5);
+}
+
+#response-logo {
+    margin: 20px 0 0 0;
 }
 
 #user-form {
@@ -76,6 +86,9 @@ input, textarea {
     border: solid 1px grey;
     border-radius: 5px; 
     resize: none;
+    background: linear-gradient(264.57deg, rgba(47, 33, 207, 0.063) 91.6%, rgba(18, 2, 45, 0) 111.28%);
+    color: #ffffff;
+    overflow: hidden;
 }
 
 #user-name {
@@ -101,14 +114,15 @@ input, textarea {
     font-size: 16px;
     font-weight: 400;
     line-height: 19.5px;
-    background: #FFFFFF;
+    background: none;
+    color: white;
 }
 
 #btn-submit {
     margin: 0 0 0 26px;
     width: 200px;
     height: 60px;
-    border: solid 1px grey;
+    border: none;
     border-radius: 5px;  
     align-self: flex-start;
     background: #C10000;
@@ -167,7 +181,7 @@ a {
 
 .header {
     padding-top: 12px;
-    width: 100%;
+    width: 100vw;
     min-height: 70px;
     display: flex;
     justify-content: center;
@@ -203,8 +217,6 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
-    width: 100vw;
-    height: 100vh;
 }
 
 .top {
@@ -215,7 +227,6 @@ a {
     width: 1920px;
     height: 975px;
     color: #fff;
-    margin-bottom: 50px;
 }
 
 .top__inner {
@@ -269,7 +280,7 @@ a {
 }
 
 /* увеличение кнопки */
-.top-btn:focus {
+.top-btn:hover {
     transition: 0.4s transform ease-in-out;
     transform: scale(1.15);
     will-change: transform;

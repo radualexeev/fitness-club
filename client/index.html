@@ -11,18 +11,8 @@
     <title>Expert Fitness</title>
 </head>
 <body>
-    <div id="window-hidden">
-        <div id="window-block">
-            <form action="" id="user-form">
-                <h1 id="request-text">Бесплатная тренировка с тренером</h1>
-                <input type="text" name="user-name" id="user-name" placeholder="Введите имя" autocomplete="off" maxlength="37">
-                <input type="tel" name="user-phone" id="user-phone" placeholder="Введите номер телефона" autocomplete="off" required pattern="^[0-9-+\s()]*$" maxLength="16" minLength="6">
-                <textarea name="user-comment" id="user-message" placeholder="Введите ваше сообщение" autocomplete="off" maxlength="225"></textarea>
-                <button type="submit" id="btn-submit">Отправить</button>
-            </form>
-        </div>
-    </div>
 
+    <span id="container-intro"></span>
     <div class="header">
         <div class="container">
             <div class="navigation">
@@ -37,13 +27,14 @@
         </div>
     </div>
 
-    <span id="container-intro"></span>
     <div class="main">
         <div class="top">
             <div class="top__inner">
                 <p class="top-title">EXPERT FITNESS — инновационный фитнес-центр</p>
                 <p class="top-text">Спорт - это не просто тренировка, это стиль жизни, который мы с удовольствием воплощаем вместе с вами!</p>
-                <button class="top-btn">записаться на бесплатную тренировку с тренером</button>
+                <form action="request.html" target="_parent">
+                    <button class="top-btn" target="_blanck">записаться на бесплатную тренировку с тренером</button>
+                </form>
             </div>
         </div>
     </div>
