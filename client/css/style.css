@@ -44,6 +44,7 @@ html, body {
 }
 
 #response-text {
+    display: none;
     color: white;
     font-size: larger;
     text-align: center;
@@ -52,6 +53,7 @@ html, body {
 }
 
 #response-logo {
+    display: none;
     margin: 20px 0 0 0;
 }
 
