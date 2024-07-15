@@ -24,11 +24,9 @@ form.addEventListener("submit", function(event) {
     })
     .then(data => {
         console.log(data);
-        alert("Form submitted successfully!")
     })
     .catch(error => {
         console.error("Error:", error);
-        alert("Error submitted form");
     });
 
     formContainer.style.display = "none";
@@ -39,14 +37,3 @@ form.addEventListener("submit", function(event) {
         window.location.href = "index.html";
     }, 3000);
 });
-
-// btn.addEventListener('click', () => {
-//     fetch('http://localhost:3000/api/data')
-//         .then(response => response.json())
-//         .then(data => {
-//             console.log(data.message)
-//         })
-//         .catch(error => {
-//             console.error('Error fetching data:', error);
-//         });
-// });
