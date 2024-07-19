@@ -11,3 +11,6 @@ Our project with HTML, CSS, JavaScript and ExpressJS.
 
 - @radualexeev
 - Анастасия Кирлик
+
+## Preview
+https://github.com/user-attachments/assets/9e356e44-6847-410c-9640-b711de3520dd
